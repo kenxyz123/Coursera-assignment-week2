@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+
+/* sets the width of the containe to 100% */
+.container {
+  width: 100%;
+}
+
+/* Gives all the divs default Settings  */
+div {
+  position: relative;
+  height: 200px;
+  border: 1px solid black;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 175%;
+  margin: 30px;
+}
+
+/* gives all the paragraphs default settings */
+p {
+  padding: 50px 20px 0 20px;
+  font-family: Helvetica;
+  font-size: 100%;
+  color: black;
+  text-align: left;
+}
+
+/* Generic Selection title could be an h2 tag,however I selected a paragraph*/
+/* It positions the section title */
+p.postion {
+  position: absolute;
+  width: 150px;
+  top: 0px;
+  right: 0px;
+  border: 1px solid black;
+  text-align: center;
+  padding: 10px 30px;
+  color: aliceblue;
+  font-size: 125%;
+  font-weight: bold;
+}
+
+/* Sets the background color in each div/section */
+.bgColor1 {
+  background: #777575;
+}
+
+.bgColor2 {
+  background: #7bc07b;
+}
+
+.bgColor3 {
+  background: #ce50ce;
+}
+
+/* title classes give each Section title a color */
+#title1 {
+  background: coral;
+}
+
+#title2 {
+  background: crimson;
+}
+#title3 {
+  background: blue;
+}
+
+/********** Desktop View **********/
+@media (min-width: 992px) {
+  .col-lg-4 {
+    float: left;
+    margin-left: 2%;
+    padding: 1%;
+    width: 30.5%;
+  }
+}
+
+/********** Tablet View **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6,
+  .col-md-12 {
+    float: left;
+    padding-top: 10px;
+    margin-bottom: 2%;
+    margin-left: 3%;
+  }
+  .col-md-6 {
+    width: 45%;
+  }
+  .col-md-12 {
+    width: 93%;
+  }
+}
+
+/* ****** Mobile view   ******* */
+
+@media (max-width: 767px) {
+  div {
+    margin: 0 8% 4% 8%;
+  }
+}
